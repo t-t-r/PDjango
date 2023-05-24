@@ -1,0 +1,11 @@
+{% extends "joukkue/base.html" %}
+
+{% block "content" %}
+	{% for object in object_list %}
+		<p><a href="/joukkue/{{ object.pk }}">{{ object }}</a></p>
+	{% endfor %}
+
+	<button onclick="window.location.href='/joukkue/new';">
+		Lisää joukkue
+	</button>
+{% endblock "content" %}
