@@ -1,0 +1,12 @@
+{% extends "turnaus/base.html" %}
+
+{% block "content" %}
+	{% for object in object_list %}
+		<p><a href="/turnaus/{{ object.pk }}">{{ object }}</a></p>
+		{% for joukkue in object.joukkueet.all %}
+			<p>{{ joukkue }}</p>
+		{% endfor %}
+	{% endfor %}
+
+	<p><a href="/turnaus/uusi">Lisää uusi turnaus</a></p>
+{% endblock "content" %}

@@ -1,0 +1,11 @@
+{% extends "turnaus/base.html" %}
+
+{% block "content" %}
+        <p>Poista turnaus "<b>{{ object }}</b>" lopullisesti.</p>
+
+        <form method=post>
+                {% csrf_token %}
+                <input type=submit value="Delete">
+        </form>
+        <p><a href="/">Peru</a></p>
+{% endblock "content" %}
