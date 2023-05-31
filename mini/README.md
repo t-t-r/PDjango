@@ -1,4 +1,7 @@
-# Mini projekti
+# Mini projekti 
+
+lisenssi (GNU General Public License, version 3)
+http://t-t-r.com
 
 ![mini](https://github.com/t-t-r/PDjango/blob/main/img/mini.jpg)
 
